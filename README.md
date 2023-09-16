@@ -40,13 +40,13 @@
     
     <script>
         let isJumping = false;
-        let jumpHeight = 500; // Hauteur de saut augmentée (pas de limite)
-        let obstacleSpeed = 20; // Vitesse de départ des obstacles encore augmentée
+        let jumpHeight = 700; // Hauteur de saut augmentée (pas de limite)
+        let obstacleSpeed = 50; // Vitesse de départ des obstacles encore augmentée
         let accelerationInterval;
-        const obstacleInterval = 4000; // Intervalle pour générer des obstacles (4 secondes)
-        const maxObstacles = 2; // Limite de 2 obstacles à l'écran
+        const obstacleInterval = 2500; // Intervalle pour générer des obstacles (4 secondes)
+        const maxObstacles = 4; // Limite de 2 obstacles à l'écran
         let obstacleQueue = []; // File d'attente pour les obstacles
-        let consecutiveAvoided = 0; // Nombre d'obstacles évités consécutivement
+        let consecutiveAvoided = 2; // Nombre d'obstacles évités consécutivement
         
         // Fonction pour faire avancer les obstacles
         function moveObstacles() {
